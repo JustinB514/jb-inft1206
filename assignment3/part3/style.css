@@ -64,7 +64,7 @@ a:link {
 }
 
 a:visited {
-  color: brown;
+  color: rgb(74, 107, 169);
 }
 
 a:focus {
@@ -74,7 +74,7 @@ a:focus {
 }
 
 a:hover {
-  color: orange;
+  color: red;
   text-decoration: none;
 }
 
