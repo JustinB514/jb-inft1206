@@ -78,6 +78,12 @@ a:hover {
   text-decoration: none;
 }
 
+a:active {
+  color: rgb(199, 46, 0);
+  text-decoration: underline overline rgb(199, 46, 0);
+}
+
 ul {
   list-style-type: square;
+  line-height: 150%;
 }
