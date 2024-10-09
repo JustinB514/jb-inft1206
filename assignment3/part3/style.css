@@ -6,7 +6,6 @@ The style sheet for index.html
 */
 
 /* General setup */
-
 * {
   box-sizing: border-box;
   font-size: 10px;
@@ -19,6 +18,7 @@ body {
   line-height: 150%;
   letter-spacing: 1px;
   word-spacing: 1px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* Layout */
@@ -107,4 +107,21 @@ a[href^="http"]::after {
 ul {
   list-style-type: square;
   line-height: 150%;
+}
+
+.container li {
+  display: block;
+  gap: 0.625%;
+  flex: 1;
+  text-align: center;
+  font-size: large;
+  border: 1px solid #a66;
+  background-color: rgb(255, 255, 255);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.container a {
+  font-size: large;
+  text-decoration: none;
 }
