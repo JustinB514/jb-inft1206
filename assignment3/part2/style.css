@@ -19,5 +19,5 @@ div {
   font-size: 2rem; /* Used a px to rem converter to determine the font size */
   color: #ffffff;
   text-shadow: 1.7px 1px #000000;
-  box-shadow: 6px 5px 5px #0000009e, inset 3px 1.3px 4px rgba(255, 255, 255, 0.793);
+  box-shadow: 6px 5px 5px #0000009e, inset 3px 1.3px 4px #ffffffca, inset -3px -3px 3px #0000009b;
 }
