@@ -1,7 +1,7 @@
 /* 
 Name: Justin Bourne 
 File: style.css
-Date: 10 October 2024
+Date: 11 October 2024
 The style sheet for index.html
 */
 
@@ -16,7 +16,6 @@ body {
       max-width: 100%;
       display: block;
       float: left;
-      margin-right: 10px;
   }
   
   .logo {
@@ -27,21 +26,27 @@ body {
   }
   
   .grid {
+    display: grid;
     margin: 0 auto;
     padding: 0 20px;
     max-width: 980px;
-    display: flex;
+    grid-template-columns: 40rem 40rem;
+    gap: 15px;
   }
   
   nav {
     background-color: #000;
     padding: .5em;
+    position: sticky;
+    top: 0;
   }
   
   nav ul {
+    display: flex;
     margin: 0;
     padding: 0;
     list-style: none;
+    justify-content: space-between;
   }
   
   nav a {
@@ -51,12 +56,16 @@ body {
   }
   
   .photos {
+    display: grid;
     list-style: none;
     margin: 0;
     padding: 0;
+    grid-template-columns: 10rem 10rem;
+    gap: 1px;
   }
 
   .feature {
-      width: 200px;
+    width: 200px;
+    margin: 0 18px 20px 0;
   }
   
