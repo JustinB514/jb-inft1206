@@ -1,3 +1,10 @@
+/*
+Name: Justin Bourne
+File: main.js
+Date: 6 November 2024
+The Javascript file that allows the random story generator to run as intended.
+*/
+
 //1. COMPLETE VARIABLE AND FUNCTION DEFINITIONS
 
 const customName = document.getElementById('customname');
@@ -34,6 +41,7 @@ function result() {
 
   if(customName.value !== '') {
     const name = customName.value;
+    //replace(storyText = Bob, name)
 
   }
 
