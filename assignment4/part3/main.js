@@ -1,3 +1,9 @@
+/*
+Name: Justin Bourne
+File: main.js
+Date: 21 November 2024
+A website thar displays balls bouncing all over the screen
+*/
 // setup canvas
 
 const canvas = document.querySelector("canvas");

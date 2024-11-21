@@ -1,3 +1,9 @@
+/*
+Name: Justin Bourne
+File: main.js
+Date: 21 November 2024
+An image gallery that can loop through the list of images and darken/lighten the selected image
+*/
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
