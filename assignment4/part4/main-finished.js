@@ -32,7 +32,7 @@ class Ball extends Shape {
     super(x, y, velX, velY);
     this.color = color;
     this.size = size;
-    this.exists= true;
+    this.exists = true;
   }
 
   draw() {
@@ -111,32 +111,32 @@ class EvilCircle extends Shape {
   }
 
   checkBounds() {
-    if (this.x + this.size >= width) {
-      this.velX = -Math.abs(this.velX);
+    if ((this.x + this.size) >= width) {
+      this.x -= this.size;
     }
 
-    if (this.x - this.size <= 0) {
-      this.velX = Math.abs(this.velX);
+    if ((this.x - this.size) <= 0) {
+      this.x += this.size;
     }
 
-    if (this.y + this.size >= height) {
-      this.velY = -Math.abs(this.velY);
+    if ((this.y + this.size) >= height) {
+      this.y -= this.size;
     }
 
-    if (this.y - this.size <= 0) {
-      this.velY = Math.abs(this.velY);
+    if ((this.y - this.size) <= 0) {
+      this.y += this.size;
     }
   }
 
   collisionDetect() {
     for (const ball of balls) {
-      if (!(this === ball) && ball.exists) {
+      if (ball.exists) {
         const dx = this.x - ball.x;
         const dy = this.y - ball.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
 
         if (distance < this.size + ball.size) {
-          ball.color = this.color = randomRGB();
+          ball.exists = false;
         }
       }
     }
@@ -173,5 +173,8 @@ function loop() {
 
   requestAnimationFrame(loop);
 }
+
+//let counter = ;
+
 
 loop();
