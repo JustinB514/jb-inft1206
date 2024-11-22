@@ -8,6 +8,9 @@ The bouncing balls website with additional features added
 // set up canvas
 
 const canvas = document.querySelector("canvas");
+
+let count = 0;
+
 const ctx = canvas.getContext("2d");
 
 const width = (canvas.width = window.innerWidth);
@@ -144,6 +147,8 @@ class EvilCircle extends Shape {
 
         if (distance < this.size + ball.size) {
           ball.exists = false;
+          count--;
+          para.textContent = 'Ball count: ' + count;
         }
       }
     }
@@ -166,22 +171,29 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
+  count++;
+  para.textContent = 'Ball count: ' + count;
 }
+
+const evilBall = new EvilCircle(random(0, width), random(0, height));
 
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
   ctx.fillRect(0, 0, width, height);
 
   for (const ball of balls) {
+    if (ball.exists) {
     ball.draw();
     ball.update();
     ball.collisionDetect();
+    }
   }
+  evilBall.draw();
+  evilBall.checkBounds();
+  evilBall.collisionDetect();
 
   requestAnimationFrame(loop);
 }
-
-//let counter = ;
 
 
 loop();
