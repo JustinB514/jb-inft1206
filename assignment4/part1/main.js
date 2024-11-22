@@ -1,7 +1,7 @@
 /*
 Name: Justin Bourne
 File: main.js
-Date: 6 November 2024
+Date: 22 November 2024
 The Javascript file that allows the random story generator to run as intended.
 */
 

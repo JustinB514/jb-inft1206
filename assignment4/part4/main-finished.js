@@ -1,7 +1,7 @@
 /*
 Name: Justin Bourne
 File: main-finished.js
-Date: 21 November 2024
+Date: 22 November 2024
 The bouncing balls website with additional features added
 */
 
