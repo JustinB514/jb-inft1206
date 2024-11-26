@@ -1,3 +1,10 @@
+/*
+Name: Justin Bourne
+File: main.js
+Date: 26 November 2024
+The Javascript file for the wildlife website
+*/
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
@@ -22,6 +29,19 @@ const form = document.querySelector('.comment-form');
 const nameField = document.querySelector('#name');
 const commentField = document.querySelector('#comment');
 const list = document.querySelector('.comment-container');
+
+//enabling keyboard accessibility
+document.onkeydown = (e) => {
+  if (e.key === "Tab"){
+    document.activeElement.hover();
+  }
+}
+
+document.onkeydown = (e) => {
+  if (e.key === "Enter"){
+    document.activeElement.click();
+  }
+}
 
 form.onsubmit = function(e) {
   e.preventDefault();
